@@ -2,7 +2,7 @@
 
 # run build container
 echo "build.start"
-docker run --rm -d -v $(pwd):/usr/src/myapp -e CGO_ENABLED=0 -w /usr/src/myapp golang:alpine3.15 go build -ldflags="-s -w -extldflags \"-static\""
+docker run --rm -d -v $(pwd):/usr/src/myapp -e CGO_ENABLED=0 -w /usr/src/myapp golang:alpine3.17 go build -ldflags="-s -w -extldflags \"-static\""
 
 # wait 
 i=1
