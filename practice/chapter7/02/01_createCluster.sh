@@ -17,7 +17,7 @@ fi
 /usr/bin/envsubst < seed.conf > env.conf
 . ./env.conf
 
-/usr/local/bin/aws ecs create-cluster --cluster-name ${ClusterName} --region ap-northeast-1
+/usr/local/bin/aws ecs create-cluster --cluster-name ${ClusterName} --region us-west-2
 RET=$?
 if [[ ${RET} -ne 0 ]]; then
 	echo "$0:aws ecs create-cluster:fail"

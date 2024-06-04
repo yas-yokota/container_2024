@@ -4,12 +4,12 @@
     "containerDefinitions": [
         {
             "name": "${LOGNAME}FargateApp", 
-            "image": "052375529711.dkr.ecr.ap-northeast-1.amazonaws.com/${LOGNAME}img:${Tag}",
+            "image": "373609171710.dkr.ecr.us-west-2.amazonaws.com/${LOGNAME}img:${Tag}",
             "logConfiguration": { 
                "logDriver": "awslogs",
                "options": { 
                   "awslogs-group": "/ecs/${LOGNAME}FargateTask",
-                  "awslogs-region": "ap-northeast-1",
+                  "awslogs-region": "us-west-2",
                   "awslogs-stream-prefix": "ecs"
                }
             },
@@ -26,7 +26,7 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "executionRoleArn": "arn:aws:iam::052375529711:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::373609171710:role/ecsTaskExecutionRole",
     "cpu": "256", 
     "memory": "512"
 }
