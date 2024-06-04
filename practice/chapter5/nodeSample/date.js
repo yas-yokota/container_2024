@@ -1,5 +1,7 @@
+process.env.TZ = 'Asia/Tokyo';
+
 const http = require('node:http');
-var dateTime = require('./modules')
+var dateTime = require('./modules');
 
 const hostname = '0.0.0.0';
 const port = 8081;
