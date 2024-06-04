@@ -11,7 +11,7 @@ if [[ ${RET} -ne 0 ]]; then
 fi
 RegName=${LOGNAME}img
 
-/usr/local/bin/aws ecr create-repository --repository-name ${RegName} --image-scanning-configuration scanOnPush=true --region ap-northeast-1
+/usr/local/bin/aws ecr create-repository --repository-name ${RegName} --image-scanning-configuration scanOnPush=true --region us-west-2
 RET=$?
 if [[ ${RET} -ne 0 ]]; then
 	echo "$0:aws ecr create-repositry.fail"
