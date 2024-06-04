@@ -27,7 +27,9 @@
         "FARGATE"
     ],
     "executionRoleArn": "arn:aws:iam::373609171710:role/ecsTaskExecutionRole",
-    "cpuArchitecture": "ARM64", 
     "cpu": "256", 
-    "memory": "512"
+    "memory": "512",
+    "runtimePlatform": {
+        "cpuArchitecture": "ARM64" 
+    }
 }
