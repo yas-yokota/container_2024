@@ -1,7 +1,7 @@
-FROM node:slim
+FROM node:18.19.1-slim
 
 COPY ./date.js /projects/
 COPY ./modules.js /projects/
 WORKDIR /projects
 
-CMD ["node","date.js"]
+CMD ["date.js"]
